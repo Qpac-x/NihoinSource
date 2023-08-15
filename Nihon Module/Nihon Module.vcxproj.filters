@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{b23c11dc-9084-4b66-bcae-79a6f6ef90e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Src\Exploit">
+      <UniqueIdentifier>{5472f211-c665-43e3-94f6-9e1dee81c9fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Exploit\Environment">
+      <UniqueIdentifier>{37c554b4-e6d7-4d48-b7f1-c119d46f1230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Exploit\Exploit-State">
+      <UniqueIdentifier>{d3abfc87-3ccc-40a5-92ca-e4a65f966c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Exploit\Offset">
+      <UniqueIdentifier>{d645689c-459e-47a2-8b02-790cca9f6f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Hooks">
+      <UniqueIdentifier>{d793e32f-1f13-4f76-9644-008c00ed0545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{7564ab3a-c4e4-4eee-8f35-61cbbca9fb11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{1a532075-19c4-44c4-bcff-5b58fc778d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Exploit\Execution">
+      <UniqueIdentifier>{4a4f0aa0-6440-456d-9786-d93d18e95378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Console">
+      <UniqueIdentifier>{6e52f9f1-7eeb-44ab-97e4-4fcc0d8e8810}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Entry.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Exploit\Environment\Environment.cpp">
+      <Filter>Src\Exploit\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Exploit\Exploit-State\TaskScheduler.cpp">
+      <Filter>Src\Exploit\Exploit-State</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lapi.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\laux.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lbaselib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lbitlib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lbuiltins.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lcorolib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ldblib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ldebug.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ldo.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lfunc.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lgc.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lgcdebug.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\linit.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lmathlib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lmem.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lnumprint.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lobject.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\loslib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lperf.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lstate.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lstring.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lstrlib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ltable.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ltablib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ltm.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\ludata.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lutf8lib.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lvmexecute.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lvmload.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\Luau\lvmutils.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Hooks\Hook.cpp">
+      <Filter>Src\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Exploit\Execution\Execution.cpp">
+      <Filter>Src\Exploit\Execution</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Console\Console.cpp">
+      <Filter>Src\Console</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config\Config.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Exploit\Offset\Offsets.hpp">
+      <Filter>Src\Exploit\Offset</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Exploit\Exploit-State\TaskScheduler.hpp">
+      <Filter>Src\Exploit\Exploit-State</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Exploit\Environment\Environment.hpp">
+      <Filter>Src\Exploit\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Exploit\Bridge.hpp">
+      <Filter>Src\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entry.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\zstd\include\zstd.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\__DECC_INCLUDE_EPILOGUE.H">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\__DECC_INCLUDE_PROLOGUE.H">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\accept_encoding.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\aes.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\api.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\asn1.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\asn1_mac.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\asn1err.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\asn1t.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Ast.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\async.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\async.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\async_wrapper.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\asyncerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\auth.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\bearer.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\bio.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\bioerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\blowfish.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\bn.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\bnerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\body.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\buffer.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\buffer.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\buffererr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Bytecode.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\BytecodeBuilder.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\callback.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\camellia.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cast.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cert_info.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cmac.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cmp.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cmp_util.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cmperr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cms.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cmserr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Common.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\comp.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\comperr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Compiler.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\conf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\conf_api.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\conferr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\configuration.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\conftypes.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Confusables.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\connect_timeout.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cookies.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\core.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\core_dispatch.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\core_names.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\core_object.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cpr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cprtypes.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cprver.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\crmf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\crmferr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\crypto.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cryptoerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cryptoerr_legacy.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ct.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\cterr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\curl.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\curl_container.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\curlholder.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\curlmultiholder.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\curlver.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\decoder.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\decodererr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\DenseHash.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\des.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\dh.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\dherr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\dsa.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\dsaerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\dtls1.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\e_os2.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\easy.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ebcdic.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ec.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ecdh.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ecdsa.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ecerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\encoder.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\encodererr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\engine.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\engineerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\err.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\error.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ess.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\esserr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\evp.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\evperr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\ExperimentalFlags.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\file.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\filesystem.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\fips_names.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\fipskey.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\hmac.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\http.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\http_version.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\httperr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\idea.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\interceptor.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\interface.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\kdf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\kdferr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lapi.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lbuiltins.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lbytecode.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lcommon.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\ldebug.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\ldo.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Lexer.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lfunc.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lgc.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\lhash.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\limit_rate.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lmem.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lnumutils.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lobject.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\local_port.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\local_port_range.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Location.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\low_speed.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lstate.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lstring.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\ltable.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\ltm.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lua.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\luacode.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\luaconf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lualib.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\ludata.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Luau\lvm.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\include\lz4\lz4.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\include\lz4\lz4frame.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\include\lz4\lz4hc.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\macros.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\md2.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\md4.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\md5.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\mdc2.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\modes.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\mprintf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\multi.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\multipart.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\multiperform.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\obj_mac.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\objects.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\objectserr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ocsp.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ocsperr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\opensslconf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\opensslv.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\options.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ossl_typ.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\param_build.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\parameters.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\params.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\ParseOptions.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\Parser.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\ParseResult.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\payload.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pem.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pem2.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pemerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pkcs7.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pkcs7err.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pkcs12.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\pkcs12err.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\prov_ssl.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\proverr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\provider.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\proxies.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\proxyauth.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\rand.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\randerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\range.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\rc2.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\rc4.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\rc5.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\redirect.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\reserve_size.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\resolve.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\response.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ripemd.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\rsa.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\rsaerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\safestack.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\seed.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\self_test.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\session.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\sha.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\singleton.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\srp.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\srtp.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ssl.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\ssl_ctx.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\ssl_options.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ssl2.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ssl3.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\sslerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\sslerr_legacy.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\stack.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\status_codes.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\stdcheaders.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\store.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\storeerr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\StringUtils.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\symhacks.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\system.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\threadpool.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\timeout.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\Compiler\include\TimeTrace.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\tls1.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\trace.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ts.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\tserr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\txt_db.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\typecheck-gcc.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\types.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\ui.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\uierr.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\unix_socket.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\urlapi.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\user_agent.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\util.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\verbose.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\whrlpool.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\x509.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\x509_vfy.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\x509err.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\x509v3.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\openssl\include\openssl\x509v3err.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\xor.hpp">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\zstd\include\xxhash.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\zlib\include\zconf.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\zlib\include\zlib.h">
+      <Filter>Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Hooks\Hook.hpp">
+      <Filter>Src\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Exploit\Execution\Execution.hpp">
+      <Filter>Src\Exploit\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Console\Console.hpp">
+      <Filter>Src\Console</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\zlib\lib\zlib.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\Compiler\library\Compiler.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\cpr\lib\cpr.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\openssl\lib\libcrypto.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\curl\lib\libcurl.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\openssl\lib\libssl.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\zstd\lib\libzstd_static.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="dependencies\lz4\lib\lz4_static.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
